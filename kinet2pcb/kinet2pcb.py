@@ -130,6 +130,7 @@ class LibURIs(dict):
                 lib,
                 flags=re.IGNORECASE | re.VERBOSE,
             )[0]
+            type_ = rmv_quotes(type_)
             if type_.lower() != "kicad":
                 continue
 
